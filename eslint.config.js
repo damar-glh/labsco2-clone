@@ -10,12 +10,17 @@ export default [
   },
   {
     files: ['src/**/*.{js,jsx,ts,tsx}'],
-    extends: [js.configs.recommended, ...tseslint.configs.recommendedTypeChecked],
+    extends: [
+      js.configs.recommended,
+      ...tseslint.configs.recommendedTypeChecked,
+      'plugin:react/recommended',
+      'plugin:prettier/recommended',
+    ],
     languageOptions: {
       parser: tseslint.parser,
       parserOptions: {
-        project: './tsconfig.app.json',
-        tsconfigRootDir: import.meta.dirName,
+        project: './tsconfig.eslint.json',
+        tsconfigRootDir: import.meta.dir,
       },
       globals: {
         ...globals.browser,
@@ -30,9 +35,7 @@ export default [
       },
     },
     rules: {
-      ...pluginReact.configs.recommended.rules,
       'react/react-in-jsx-scope': 'off',
     },
   },
-  prettier,
 ]
