@@ -1,3 +1,5 @@
+import type { LucideIcon } from 'lucide-react'
+
 export interface MenuItem {
   title: string
   to?: string
@@ -6,7 +8,7 @@ export interface MenuItem {
 export interface OurServicesProps {
   title: string
   to: string
-  icon: React.ReactNode
+  icon: LucideIcon
   backgroundColor: string
   description: string
 }

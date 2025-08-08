@@ -11,6 +11,7 @@
   --color-bg-primary: #f9f8f6;
   --color-bg-secondary: #e5e7eb;
   --color-bg-dark: #141516;
+  --shadow-custom-drop: 0 4px 20px #00000017;
 }
 
 @font-face {
@@ -145,6 +146,10 @@
 }
 
 @layer base {
+  ::-webkit-scrollbar {
+    color: white;
+  }
+
   * {
     @apply border-border outline-ring/50;
   }
