@@ -8,7 +8,7 @@ export const Cta = () => {
       rel="noopener noreferrer">
       <Button
         variant="default"
-        className="w-full bg-primary text-bg-primary rounded-md font-medium text-base hover:scale-110 transition-all hover:shadow-md cursor-pointer">
+        className="w-full bg-slate-800 text-bg-primary rounded-md font-medium text-base hover:scale-110 transition-all hover:shadow-md cursor-pointer">
         Get Started Today!
       </Button>
     </a>
