@@ -1,5 +1,5 @@
 #!/bin/sh
 . "$(dirname "$0")/_/husky.sh"
 
-npx @biomejs/biome format --write --staged
-npx @biomejs/biome lint --write --staged
+npx @biomejs/biome check --write --staged
+git add .

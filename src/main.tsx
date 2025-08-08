@@ -1,12 +1,8 @@
-import { StrictMode } from "react";
-import { createRoot } from "react-dom/client";
-import "./index.css";
+import { createRoot } from 'react-dom/client'
+import routes from '@/routes/routes.ts'
+import './index.css'
+import { RouterProvider } from 'react-router'
 
-const rootElement = document.getElementById("root");
-if (rootElement) {
-  createRoot(rootElement).render(
-    <StrictMode>
-      <div>Hello, World!</div>
-    </StrictMode>,
-  );
-}
+const container = document.getElementById('root') as HTMLElement
+const root = createRoot(container)
+root.render(<RouterProvider router={routes} />)
