@@ -1,6 +1,6 @@
 import { Outlet } from 'react-router'
 import Footer from '@/components/footer'
-import Header from '@/components/header/header.tsx'
+import Header from '@/components/header.tsx'
 
 const PublicLayout = () => (
   <div className="flex min-h-screen w-full flex-col items-center">
