@@ -1,12 +1,12 @@
-interface ServiceCard {
-  icon: React.Component
-  title: string
-  description: string
-  link: string
-}
+import type { LucideIcon } from 'lucide-react'
 
 interface ServiceCardProps {
-  service: ServiceCard
+  service: {
+    icon: LucideIcon
+    title: string
+    description: string
+    link: string
+  }
 }
 
 export type { ServiceCardProps }

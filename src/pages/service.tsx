@@ -5,12 +5,8 @@ import servicesHeroData from '@/data/services-hero-data'
 const Service = () => {
   const { serviceKey } = useParams<{ serviceKey: string }>()
   const serviceHero = servicesHeroData.find((service) => service.key === serviceKey)
-
-  return (
-    <>
-      <ServiceHeroSection serviceHero={serviceHero} />
-    </>
-  )
+  if (!serviceHero) return null
+  return <ServiceHeroSection serviceHero={serviceHero} />
 }
 
 export default Service
