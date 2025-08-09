@@ -3,6 +3,9 @@ import Logo from '@/assets/logo.webp'
 import { Button } from '@/components/ui/button.tsx'
 
 const NotFound = () => {
+  const handleBackClick = () => {
+    window.history.back()
+  }
   return (
     <section className="flex flex-col items-center justify-center min-h-screen gap-5 bg-bg-primary">
       <img src={Logo} alt="CO2 Labs Logo" className="w-20" />
@@ -11,7 +14,9 @@ const NotFound = () => {
       <p className="text-gray-400 mx-5 text-xl font-generalsans-medium">
         Sorry, we can't find that page. You'll find lots to explore on the home page.
       </p>
-      <Button className="bg-gray-800 hover:bg-gray-700 text-white rounded-lg px-4 py-2">
+      <Button
+        className="bg-gray-800 hover:bg-gray-700 text-white rounded-lg px-4 py-2"
+        onClick={handleBackClick}>
         Bring me back ←
       </Button>
       <div className="flex flex-wrap justify-center gap-5  text-gray-800">
