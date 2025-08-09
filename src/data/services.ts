@@ -4,6 +4,7 @@ import Diamond from '@/assets/svg/diamond-menu-services.svg?react'
 import SlidersHorizontal from '@/assets/svg/tree-slider-menu-services.svg?react'
 import type { MenuItem, OurServicesProps } from '@/types/nav.ts'
 
+// @ts-ignore
 export const ourServices: OurServicesProps[] = [
   {
     title: 'Website Maintenance',

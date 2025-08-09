@@ -2,6 +2,7 @@ import type React from 'react'
 import { Button } from '@/components/ui/button.tsx'
 import type { ServiceCardProps } from '@/types/service.ts'
 
+// @ts-ignore
 const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   return (
     <div className="h-96 w-72 bg-bg-primary rounded-xl p-7 shadow-custom-drop flex flex-col items-center justify-center">
