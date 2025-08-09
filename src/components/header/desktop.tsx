@@ -1,4 +1,4 @@
-import { Link, Navigate, useNavigate } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import { Cta } from '@/components/header/cta'
 import {
   NavigationMenu,

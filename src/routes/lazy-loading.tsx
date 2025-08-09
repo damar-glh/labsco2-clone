@@ -1,8 +1,8 @@
 import { lazy, Suspense } from 'react'
 
-const lazyLoading = (importFunc) => {
+const lazyLoading = (importFunc: () => Promise<{ default: React.ComponentType<any> }>) => {
   const LazyComponent = lazy(importFunc)
-  return (props) => (
+  return (props: any) => (
     <Suspense
       fallback={
         <div className="flex items-center justify-center h-screen">

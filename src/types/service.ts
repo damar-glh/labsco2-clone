@@ -1,7 +1,5 @@
-import type { LucideIcon } from 'lucide-react'
-
 interface ServiceCard {
-  icon: LucideIcon
+  icon: React.Component
   title: string
   description: string
   link: string
