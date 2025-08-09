@@ -23,7 +23,6 @@ export const Desktop = () => {
             <NavigationMenuContent>
               <ul className="grid w-[400px] gap-2 md:w-[500px] md:grid-cols-2 lg:w-[800px]">
                 {ourServices.map((service) => {
-                  const IconComponent = service.icon as any
                   return (
                     <Link
                       key={service.title}
@@ -37,7 +36,7 @@ export const Desktop = () => {
                           width: '4rem',
                           height: '4rem',
                         }}>
-                        {IconComponent && <IconComponent className="size-6" strokeWidth={3} />}
+                        <service.icon />
                       </div>
                       <div className="flex flex-col">
                         <h5 className="font-generalsans-semibold text-xl">{service.title}</h5>

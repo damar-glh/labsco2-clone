@@ -1,4 +1,7 @@
-import { CodeXml, Diamond, SlidersHorizontal, Waypoints } from 'lucide-react'
+import Waypoints from '@/assets/svg/branch-menu-services.svg?react'
+import CodeXml from '@/assets/svg/code-xml-menu-services.svg?react'
+import Diamond from '@/assets/svg/diamond-menu-services.svg?react'
+import SlidersHorizontal from '@/assets/svg/tree-slider-menu-services.svg?react'
 import type { MenuItem, OurServicesProps } from '@/types/nav.ts'
 
 export const ourServices: OurServicesProps[] = [
