@@ -12,14 +12,7 @@ const AceSection = () => {
       </div>
       <div className="w-full flex flex-col lg:flex-row">
         {aceData.map((item) => (
-          <AceCard
-            key={item}
-            title={item.title}
-            titleContinued={item.titleContinued}
-            description={item.description}
-            details={item.details}
-            backgroundColor={item.backgroundColor}
-          />
+          <AceCard key={item.title} ace={item} />
         ))}
       </div>
     </section>

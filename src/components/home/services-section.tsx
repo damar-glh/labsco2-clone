@@ -10,13 +10,7 @@ const ServicesSection = () => {
         </h2>
         <div className="flex flex-wrap gap-3 justify-center">
           {servicesData.map((service) => (
-            <ServiceCard
-              key={service.title}
-              icon={service.icon}
-              title={service.title}
-              description={service.description}
-              link={service.link}
-            />
+            <ServiceCard key={service.title} service={service} />
           ))}
         </div>
       </div>

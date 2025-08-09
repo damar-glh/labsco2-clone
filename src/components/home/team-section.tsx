@@ -9,7 +9,7 @@ const TeamSection = () => {
       </div>
       <div className="lg:flex gap-5">
         {teamMembers.map((members) => (
-          <TeamCard key={members} member={members} />
+          <TeamCard key={members.name} member={members} />
         ))}
       </div>
     </section>
