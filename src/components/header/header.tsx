@@ -29,7 +29,7 @@ const Header = () => {
             className="bg-bg-primary border-none p-2 hover:bg-gray-100"
             onClick={toggleMenu}
             aria-label="Toggle Menu">
-            <Menu className="text-bg-dark/80 size-8" />
+            <Menu className="text-bg-dark/80 size-8" strokeWidth={3} />
           </Button>
         )}
       </header>

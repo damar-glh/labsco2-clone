@@ -37,11 +37,11 @@ export const Desktop = () => {
                           width: '4rem',
                           height: '4rem',
                         }}>
-                        {IconComponent && <IconComponent className="size-6" />}
+                        {IconComponent && <IconComponent className="size-6" strokeWidth={3} />}
                       </div>
                       <div className="flex flex-col">
-                        <h5 className="font-family text-xl font-bold">{service.title}</h5>
-                        <p className="font-family font-medium text-xs w-60">
+                        <h5 className="font-generalsans-semibold text-xl">{service.title}</h5>
+                        <p className="font-generalsans-medium text-xs w-60">
                           {service.description}
                         </p>
                       </div>

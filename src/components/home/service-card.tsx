@@ -15,8 +15,8 @@ const ServiceCard = ({ icon: IconComponent, title, description, link }: ServiceC
         <IconComponent className="w-8 h-8 text-slate-700" />
       </div>
       <div className="flex flex-col items-center justify-center">
-        <h5 className="text-xl text-center font-semibold text-gray-900 font-family">{title}</h5>
-        <p className="text-base font-medium my-5 text-center font-family">{description}</p>
+        <h5 className="text-xl text-center font-generalsans-semibold text-gray-900">{title}</h5>
+        <p className="text-base my-5 text-center font-generalsans-medium">{description}</p>
         <Button type="button" className="bg-transparent">
           <a
             href={link}

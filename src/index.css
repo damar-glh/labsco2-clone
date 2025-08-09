@@ -1,9 +1,13 @@
 @import "tailwindcss";
 @import "tw-animate-css";
+
 @custom-variant dark (&:is(.dark *));
 
 @theme {
   --font-family: "GeneralSans", sans-serif;
+  --font-generalsans-medium: "GeneralSans-Medium", sans-serif;
+  --font-generalsans-semibold: "GeneralSans-Semibold", sans-serif;
+  --font-generalsans-bold: "GeneralSans-Bold", sans-serif;
   --font-family-heading: "Orbitron", sans-serif;
   --color-primary: #153147;
   --color-secondary: #adb8ba;

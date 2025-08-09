@@ -55,7 +55,7 @@ function NavigationMenuItem({
 }
 
 const navigationMenuTriggerStyle = cva(
-  'group inline-flex h-9 w-max items-center justify-center rounded-md bg-bg-primary px-4 py-2 text-xl font-medium gap-1.5',
+  'group inline-flex h-9 w-max items-center justify-center rounded-md bg-bg-primary px-4 py-2 text-xl font-generalsans-medium gap-1.5',
 )
 
 function NavigationMenuTrigger({
