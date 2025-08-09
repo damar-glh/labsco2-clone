@@ -1,18 +1,8 @@
 /** biome-ignore-all lint/a11y/noStaticElementInteractions: <explanation> */
 import { ChevronDown } from 'lucide-react'
+import type React from 'react'
 import { useState } from 'react'
-
-interface AceCard {
-  title: string
-  titleContinued: string
-  description: string
-  details: string[]
-  backgroundColor?: string
-}
-
-interface AceCardProps {
-  ace: AceCard
-}
+import type { AceCardProps } from '@/types/ace.ts'
 
 const AceCard: React.FC<AceCardProps> = ({ ace }) => {
   const [isExpanded, setIsExpanded] = useState(false)

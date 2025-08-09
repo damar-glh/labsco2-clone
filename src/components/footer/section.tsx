@@ -9,13 +9,11 @@ const FooterSection = ({ title, items, isContact = false }: FooterSectionProps) 
           <li key={item.href || item.text || index} className="mt-2">
             {isContact ? (
               <div className="flex items-center gap-2">
-                {item.icon && <item.icon className="inline text-[#888]" />}
+                {item.icon && <item.icon className="inline h-6 text-[#888]" />}
                 <span>{item.text}</span>
               </div>
             ) : (
-              <a href={item.href}>
-                {item.label}
-              </a>
+              <a href={item.href}>{item.label}</a>
             )}
           </li>
         ))}

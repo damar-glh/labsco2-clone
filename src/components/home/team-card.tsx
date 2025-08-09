@@ -1,15 +1,5 @@
 import type React from 'react'
-
-interface TeamMember {
-  name: string
-  position: string
-  description: string
-  avatar?: string
-}
-
-interface TeamCardProps {
-  member: TeamMember
-}
+import type { TeamCardProps } from '@/types/team.ts'
 
 const TeamCard: React.FC<TeamCardProps> = ({ member }) => {
   return (

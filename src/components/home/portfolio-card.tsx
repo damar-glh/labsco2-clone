@@ -1,14 +1,5 @@
 import type React from 'react'
-
-interface Portfolio {
-  title: string
-  link: string
-  image: string
-}
-
-interface PortfolioCardProps {
-  portfolio: Portfolio
-}
+import type { PortfolioCardProps } from '@/types/portfolio.ts'
 
 const PortfolioCard: React.FC<PortfolioCardProps> = ({ portfolio }) => {
   return (

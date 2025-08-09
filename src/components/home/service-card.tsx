@@ -1,17 +1,6 @@
-import type { LucideIcon } from 'lucide-react'
 import type React from 'react'
 import { Button } from '@/components/ui/button.tsx'
-
-interface ServiceCard {
-  icon: LucideIcon
-  title: string
-  description: string
-  link: string
-}
-
-interface ServiceCardProps {
-  service: ServiceCard
-}
+import type { ServiceCardProps } from '@/types/service.ts'
 
 const ServiceCard: React.FC<ServiceCardProps> = ({ service }) => {
   return (
