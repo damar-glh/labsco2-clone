@@ -16,7 +16,7 @@ export default createBrowserRouter([
         Component: Home,
       },
       {
-        path: 'service/:serviceId',
+        path: 'service/:serviceKey',
         Component: Service,
       },
     ],

@@ -36,7 +36,7 @@ export const ourServices: OurServicesProps[] = [
 ]
 
 export const menuItems: MenuItem[] = [
-  { title: 'About Us', to: '#about' },
-  { title: 'Portfolio', to: '#portfolio' },
-  { title: 'Contact', to: '#contact' },
+  { title: 'About Us', to: 'about' },
+  { title: 'Portfolio', to: 'portfolio' },
+  { title: 'Contact', to: 'contact' },
 ]

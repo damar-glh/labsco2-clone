@@ -1,4 +1,4 @@
-import { Link } from 'react-router'
+import { Link, Navigate, useNavigate } from 'react-router'
 import { Cta } from '@/components/header/cta'
 import {
   NavigationMenu,
@@ -12,6 +12,7 @@ import {
 import { menuItems, ourServices } from '@/data/services'
 
 export const Desktop = () => {
+  const navigate = useNavigate()
   return (
     <>
       <NavigationMenu className="flex items-center">
@@ -52,7 +53,17 @@ export const Desktop = () => {
           </NavigationMenuItem>
           {menuItems.map((item) => (
             <NavigationMenuItem key={item.title}>
-              <NavigationMenuLink href={item.to || '#'} className={navigationMenuTriggerStyle()}>
+              <NavigationMenuLink
+                href="#"
+                className={navigationMenuTriggerStyle()}
+                onClick={(e) => {
+                  e.preventDefault()
+                  navigate('/', { replace: true })
+                  setTimeout(() => {
+                    const element = document.getElementById(item.to)
+                    element?.scrollIntoView({ behavior: 'smooth' })
+                  }, 100)
+                }}>
                 {item.title}
               </NavigationMenuLink>
             </NavigationMenuItem>

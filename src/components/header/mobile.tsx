@@ -1,5 +1,5 @@
 import { X } from 'lucide-react'
-import { Link } from 'react-router'
+import { Link, useNavigate } from 'react-router'
 import { Cta } from '@/components/header/cta.tsx'
 import { Button } from '@/components/ui/button.tsx'
 import { menuItems, ourServices } from '@/data/services.ts'
@@ -10,6 +10,7 @@ interface MobileProps {
 }
 
 export const Mobile = ({ isOpen, onClose }: MobileProps) => {
+  const navigate = useNavigate()
   if (!isOpen) return null
 
   return (
@@ -49,9 +50,17 @@ export const Mobile = ({ isOpen, onClose }: MobileProps) => {
             {menuItems.map((item) => (
               <li key={item.title}>
                 <Link
-                  to={item.to || '#'}
+                  to="#"
                   className="block font-generalsans-medium text-lg bg-gray-100 text-gray-800 p-3 mb-4"
-                  onClick={onClose}>
+                  onClick={(e) => {
+                    e.preventDefault()
+                    onClose()
+                    navigate('/', { replace: true })
+                    setTimeout(() => {
+                      const element = document.getElementById(item.to ?? '')
+                      element?.scrollIntoView({ behavior: 'smooth' })
+                    }, 100)
+                  }}>
                   {item.title}
                 </Link>
               </li>
