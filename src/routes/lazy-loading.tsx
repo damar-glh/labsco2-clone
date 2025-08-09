@@ -6,7 +6,7 @@ const lazyLoading = (importFunc) => {
     <Suspense
       fallback={
         <div className="flex items-center justify-center h-screen">
-          <h1 className="text-xl md:text-3xl font-bold">Loading...</h1>
+          <h1 className="text-xl md:text-2xl font-generalsans-semibold">Loading...</h1>
         </div>
       }>
       <LazyComponent {...props} />

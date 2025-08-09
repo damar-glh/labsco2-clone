@@ -4,6 +4,7 @@ import lazyLoading from '@/routes/lazy-loading'
 const PublicLayout = lazyLoading(() => import('@/layouts/public'))
 const Home = lazyLoading(() => import('@/pages/home'))
 const Service = lazyLoading(() => import('@/pages/service/service'))
+const NotFound = lazyLoading(() => import('@/pages/not-found'))
 
 export default createBrowserRouter([
   {
@@ -19,5 +20,9 @@ export default createBrowserRouter([
         Component: Service,
       },
     ],
+  },
+  {
+    path: '*',
+    Component: NotFound,
   },
 ])
